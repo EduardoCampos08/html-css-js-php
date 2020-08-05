@@ -1,0 +1,23 @@
+body{
+    background-image: url('https://images.pexels.com/photos/3683056/pexels-photo-3683056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+}
+
+.vacio{
+    width: 100%;
+    height: 600px;
+    
+}
+
+.contenedor{
+    width: 100%;
+    height: 600px;
+    background-color: royalblue;
+    
+}
+
+

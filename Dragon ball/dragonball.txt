@@ -1,0 +1,210 @@
+Dragon Ball
+
+Introduccion:
+Dragon Ball (??????? Doragon Boru?, 
+Bola de dragón) es un manga 
+escrito e ilustrado por Akira Toriyama. 
+Fue publicado originalmente en la revista 
+Shonen Jump, 
+de la editorial japonesa Shueisha, 
+entre 1984 y 1995.
+Toei Animation produjo la adaptación al anime de Dragon Ball, cuya animación estuvo a cargo de Studio Live, Astroimpact, Inc, Bird Studio y Shueisha, dirigida por Daisuke Nishio y Minoru Okazaki y musicalizada por Shunsuke Kikuchi.
+El mangaka colaboró en la producción como asistente en el diseño e iluminación de los personajes.62? Fuji Television transmitió originalmente el anime de 153 episodios en total, basados en la primera parte del manga que narra las aventuras de Goku en su infancia, desde el 26 de febrero de 1986 hasta el 19 de abril de 1989.1? 
+
+Reparto de voces:
+ Masako Nozawa como Goku
+img(masako.jpg)
+ Hiromi Tsuru como Bulma
+img(hiromi.jpg)
+ Kohei Miyauchi como Kame Sennin
+img(koehi.jpg)
+ Mayumi Tanaka como Krilin
+img(mayumi.jpg)
+ Tohru Furuya como Yamcha
+img(tohru.jpg)
+ Hirotaka Suzuoki como Ten Shin Han 
+img(hirotaka.jpg)
+ Toshio Furukawa como Piccolo
+img(toshio.jpg)
+
+
+manga:
+carpeta imgs/manga/dragonball
+
+personajes:
+Son Goku (Dragon Ball)
+ img(SonGoku(Dragon Ball).jpg)
+Mutenroshi
+ img(mutenroshi.jpg)
+Krilin (Dragon Ball )
+ img(krilinDragonBall.jpg)
+Son Gohan (Abuelo)
+ img(SonGohanAbuelo.jpg)
+Nube Kinton
+ img(NubeKinton.jpg)
+Announcer
+ img(Announcer.jpg)
+Piccolo Daimaku
+ img(PiccoloDaimaku.jpg)
+
+
+
+galeria:
+img(dragonball1.jpg)
+img(dragonball2.jpg)
+img(dragonball3.jpg)
+img(dragonball4.jpg)
+img(dragonball5.jpg)
+img(dragonball6.jpg)
+img(dragonball7.jpg)
+img(dragonball8.jpg)
+img(dragonball9.jpg)
+
+
+
+mejores momentos:
+
+
+
+capitulos:
+
+
+
+
+
+
+
+2.- dragon ball z
+
+introduccion:
+La continuación de Dragon Ball que relata las aventuras de Goku en su etapa adulta se estrenó el 26 de abril de 1989 en Fuji Television. Fue producida también por Toei Animation y animada por los mismos estudios que la serie predecesora. Nishio volvió como director, al igual que Kikuchi como responsable de la composición musical.116? Está basada en los 26 volúmenes del manga que no fueron cubiertos por el otro anime. Tuvo un total de 291 episodios, y su transmisión concluyó el 31 de enero de 1996.1? El tema de apertura del anime es «Cha-La Head-Cha-La» (Exc. en la saga Boo, en donde se usó «WE GOTTA POWER» en su lugar). 
+
+reparto de voces:
+Masako Nozawa como Goku
+img(masako.jpg)
+ Hiromi Tsuru como Bulma
+img(hiromi.jpg)
+ Mayumi Tanaka como Krilin
+img(mayumi.jpg)
+ Ryo Horikawa como vegeta
+img(ryo.jpg)
+ Takeshi Kusao como Trunks
+img(taksh.jpg)
+ Yuko Minaguchi como Videl
+img(yuko.jpg)
+ Ryusei Nakao como Freezer
+img(ryusei.jpg)
+ Norio Wakamoto como Cell 
+img(norio.jpg)
+ Kozo Shioya como Majin Boo
+img(kozo.jpg)
+
+manga:
+carpeta imgs/manga/dragonballz-sagaVegeta
+
+
+personajes:
+Goku 
+ img(goku.jpg)
+vegeta
+ img(vegeta.jpg)
+Son Gohan
+ img(SonGohan.jpg)
+Piccolo
+ img(Piccolo.jpg)
+Trunks del futuro
+ img(Trunksdelfuturo.jpg)
+Célula
+ img(Célula.jpg)
+Freezer
+ img(Freezer.jpg)
+Pequeño Boo
+ img(PequeñoBoo.jpg)
+
+
+galeria:
+img(dragonballz1.jpg)
+img(dragonballz2.jpg)
+img(dragonballz3.jpg)
+img(dragonballz4.jpg)
+img(dragonballz5.jpg)
+img(dragonballz6.jpg)
+img(dragonballz7.jpg)
+img(dragonballz8.jpg)
+img(dragonballz9.jpg)
+
+
+mejores momentos:
+
+
+
+capitulos:
+
+
+
+3.- dragon ball super
+
+introduccion:
+A través de su sitio web oficial, Toei Animation anunció el 28 de abril de 2015 la producción de una nueva serie titulada Dragon Ball Super (???????? Doragon Boru Supa?), que se estrenó en Japón el 5 de julio del mismo año.123? Su trama continúa los sucesos relatados en Dragon Ball Z después de la Saga de Majin Boo. La serie es coproducida por Fuji TV y cuenta con la supervisión de Toriyama como encargado de la historia y diseñador de personajes.124? La serie finalizó el 25 de marzo de 2018, tras la emisión de 131 episodios. 
+
+reparto de voces:
+Masako Nozawa como Goku,gohan y goten
+img(masako.jpg)
+ Hiromi Tsuru como Bulma
+img(hiromi.jpg)
+ Mayumi Tanaka como Krilin
+img(mayumi.jpg)
+ Ryo Horikawa como vegeta
+img(ryo.jpg)
+ Toshio Furukawa como piccolo
+img(toshio.jpg)
+ Koichi Yamadera como bills
+img(koichi.jpg)
+ Masakazu Morita como whis
+img(Masakazu.jpg)
+ Satomi Korogi como Zen'o-sama 
+img(Satomi.jpg)
+
+manga:
+Dragon ball\imgs\manga
+
+personajes:
+Goku 
+ img(goku.jpg)
+vegeta
+ img(vegeta.jpg)
+Androide Número 18 y 17
+ img(AndroideNúmero18y17.jpg)
+Beerus
+ img(Beerus.jpg)
+hit
+ img(hit.jpg)
+jiren
+ img(jiren.jpg)
+goku black
+ img(gokublack.jpg)
+samazu
+ img(samasu.jpg)
+
+
+galeria:
+img(dragonballsuper1.jpg)
+img(dragonballsuper2.jpg)
+img(dragonballsuper3.jpg)
+img(dragonballsuper4.jpg)
+img(dragonballsuper5.jpg)
+img(dragonballsuper6.jpg)
+img(dragonballsuper7.jpg)
+img(dragonballsuper8.jpg)
+img(dragonballsuper9.jpg)
+
+mejores momentos:
+
+
+
+capitulos:
+
+
+
+
+

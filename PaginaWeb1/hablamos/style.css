@@ -1,0 +1,269 @@
+body{
+    margin:0;
+}
+html{
+    scroll-behavior: auto;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Krona+One&family=Poppins:wght@600&display=swap');
+
+
+
+:root{
+    --current-color: rgb(247, 186, 73);
+    --second-color: rgb(165, 164, 164);
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: .5m;
+}
+.menu li{
+    padding: 1em 1.5em;
+    margin-right: .5em;
+    
+    
+    box-shadow: 0 0 4px black;
+    position: relative;
+    cursor: pointer;
+}
+.menu li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0,0,0, .5);
+    text-decoration: none;
+}
+.menu li:before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 0;
+    background-color: rgba(0,0,0, .3);
+    left: 0;
+    top: 0;
+
+    transition: ease-in-out .5s all;
+}
+.menu li::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 0;
+    background-color: rgba(0,0,0, .3);
+    right: 0;
+    top: 0;
+
+    transition: ease-in-out .5s all;
+}
+.menu li:hover:before,.menu li:hover:after{
+    height: 100%;
+}
+
+
+
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+}
+.titleP, .description{
+    
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+}
+.titleP{
+    height: 10vh;
+}
+.titleP h1{
+    color: var(--current-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em; 
+    padding-left: 1em;
+}
+.description{
+    height: 15vh;
+    grid-row: 2/3;
+}
+.description h3{
+    color: var(--second-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    padding-left: 1.5em;
+}
+.form{
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form form{
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+}
+.form form label{
+    color: var(--second-color);
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: .2em;
+}
+.form .correo{
+    margin-bottom: -1.5em;
+}
+.form form input[type=text]{
+    border: 1px solid var(--second-color);
+}
+.form form select,.form form textarea{
+    border-color: var(--second-color);
+}
+.form form input , .form form select{
+    height: 2em;
+}
+.form form optgroup,.form form optgroup option{
+    color: var(--second-color);
+}
+.form form select{
+   color :#757575;
+}
+.form form textarea{
+    height: 7em;
+}
+.btnenviar{
+    margin: 1em 0;
+    width: 25%;
+    background-color: var(--current-color);
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.emailOK{
+    color: white;
+    height: 1.5em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 1.5em;
+}
+.btnenviar:hover{
+    background-color: white;
+    color: var(--current-color);
+    border: 2px solid var(--current-color);
+}
+
+:focus{
+    outline: none;
+}
+
+
+
+
+
+
+.seccion7{
+    width: 100%,
+}
+.seccion7 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion7 a img{
+    width: 5%;
+}
+.seccion7 .contacto{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url(https://images.pexels.com/photos/34753/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+    background-position-Y: -44vh;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion7 .contacto h1 , .seccion7 .contacto p{
+    position: absolute;
+}
+.seccion7 .contacto h1{
+    bottom: 1.2em;
+    font-family: 'Krona One', sans-serif;
+    font-size: 5em;
+    color: white;
+    letter-spacing: .3em;
+}
+.seccion7 .contacto h1::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    bottom: -20%;
+    left: 15%;
+    background-color: white;
+}
+.seccion7 .contacto p{
+    bottom: .5em;
+    width: 40%;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+.seccion8{
+    width: 100%;
+}
+.seccion8 .email{
+    width: 50%;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion8 .email a{
+    color: gray;
+    font-size: 1.2em;
+    text-decoration: none;
+    position: relative;
+    margin: .7em;
+}
+.seccion8 .email a::before{
+    content: url(svg/correo.svg);
+    width: 10%;
+    position: absolute;
+    left: -10%;
+}
+.seccion8 .svgs{
+    width: 50%;
+    float: right;
+}
+.seccion8 .svgs .box-svg a img{
+    width: 7%;
+    margin-right: 2em;
+}
+.seccion8 .svgs .box-svg a:first-child{
+    margin-left: 5em;
+}

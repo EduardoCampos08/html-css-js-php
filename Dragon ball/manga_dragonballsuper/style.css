@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    scroll-behavior: smooth;
+   
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.modal{
+    display: none;
+    width: 90%;
+    height:90vh;
+    background-image: url(../imgs/manga/DragonBall/Tomo01/000-1.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    margin: 5vh auto;
+
+    transform: translateX(300%);
+
+  
+}
+.modal:target{
+    display: block;
+    transform: translateX(0);
+}
+
+
+.ventana{
+    width: 90%;
+    height: 90vh;
+    background-image: url(../imgs/manga/DragonBall/Portada.jpg);
+    background-size: cover;
+   margin: 5vh auto;
+}
+ .right{
+    background-color: rgba(0, 0, 0, .5);
+    width: 5%;
+    float: right;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-cambiar{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.left{
+    background-color: rgba(0, 0, 0, .5);
+    width: 5%;
+    height: 100%;
+}

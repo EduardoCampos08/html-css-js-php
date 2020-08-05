@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Pagina web css GRID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    
+<main class="contenedor">
+    <div class="container" id="container">
+        <div class="preloader" id="preloader">
+            <p>Cargando...</p>
+        </div>  
+    </div>
+        <nav>
+            <ul class="menu">
+                <li class="item-consolas"><a href="consolas.html">Mejores consolas</a></li>
+                <li class="item-telefonos"><a href="telefonos.html">Mejores telefonos</a></li>
+                <li class="item-juegos"><a href="#juegos">Mejores juegos</a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <img src="" alt="">
+            <h1>Mundo Nintendo</h1>
+        </header>
+        <did class="switch">
+            <h1>Switch</h1>
+        </did>
+        <section class="principal" id="juegos">
+            <article >
+                <h2 >The Legend of Zelda: Breath of the Wild</h2>
+                <p> <strong> The Legend of Zelda: Breath of the Wild</strong>
+                     es la nueva aventura de acción de <strong> Nintendo para Wii U y Nintendo Switch </strong>que nos presenta el título más ambicioso de la saga con un mundo abierto por explorar y en el que realizar todo tipo de acciones como escalar además de otras clásicas como nadar o montar a caballo. Link despierta tras un profundo sueño de 100 años en un misterioso templo en el reino de Hyrule; junto a él, deberemos descubrir su pasado mientras escuchamos una voz que nos incita a enfrentarnos a un malvado ser que provocó el llamado cataclismo: Ganon.</p>
+                
+                     <img src="https://as01.epimg.net/meristation/imagenes/2017/12/30/game_cover/1514664000.jpg" alt="">
+                     <div class="puntuacion">10</div>
+            </article>
+            <article>
+                <h2>Super Mario Odyssey</h2>
+                <p> <strong> Super Mario Odyssey</strong>, desarrollado y distribuido por <strong>Nintendo para Nintendo Switch</strong> , es una nueva aventura de <strong>acción y plataformas</strong>  de mundo abierto que recoge el testigo de Super Mario 64 y Super Mario Sunshine en la que Mario abandona el Reino Champiñón para vivir nuevas peripecias en la Tierra a bordo de una aeronave. Este es el primer juego de Mario en un mundo abierto desde Super Mario 64 para Nintendo 64 y Super Mario Sunshine para Nintendo GameCube. La nueva entrega se desarrolla en el escenario más inesperado: ¡el planeta Tierra! Mario deja el Reino Champiñón para embarcarse en un viaje por lugares misteriosos y vivir nuevas aventuras a bordo de una aeronave, demostrando el hábil manejo de su gorra.</p>
+                <img src="https://as01.epimg.net/meristation/imagenes/2018/02/09/game_cover/1518152400.jpg" alt="">
+                <div class="puntuacion">9,7</div>
+            </article>
+            <article>
+                <h2>Octopath Traveler</h2>
+                <p><strong> Octopath Traveler</strong> es un<strong> RPG</strong> a cargo de<strong> Square Enix</strong> para<strong> Switch, PC y Stadia</strong>. Los productores de Bravely Default en Square Enix nos presentan un nuevo mundo de fantasía que combina gráficos generados por ordenador, arte pixelado y pura magia visual. Sus creadores lo han llamado "HD-2D". Comienza tu viaje como uno de los ocho protagonistas, cada uno con un talento, un origen y un objetivo propios. ¿Dónde comenzará el viaje? ¿Quién se unirá al equipo? ¿Y adónde irás a continuación? Todas estas decisiones y muchas otras están completamente en manos del jugador. Cada personaje dispone de una acción de senda exclusiva que puede usar para interactuar de forma única con la gente que se encuentre. Por ejemplo, el guerrero Olberic puede desafiar a un duelo a casi cualquiera. Al hacerlo, podrá desenmascarar a un villano y llevarlo ante la justicia u obligar a alguien a apartarse de su camino. En cambio, la bailarina Primrose puede seducir a otros para que la sigan. Con esta habilidad, puede localizar a alguien que se haya perdido y traerlo de vuelta, o atraer a sus enemigos hacia una trampa.</p>
+                <img src="https://as01.epimg.net/meristation/imagenes/2020/04/28/game_cover/108348581588110860.jpg" alt="" class="img-octan">
+                <div class="puntuacion">9,5</div>
+            </article>
+            
+            
+        </section>
+        <aside class="barra">
+            <h1>Creador</h1>
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/scott_riley/128.jpg" alt="">
+            <h2>Eduardo Campos Frias</h2>
+            
+        </aside>
+        <div class="widget-1">
+           <h1><a href="https://www.facebook.com/sharer/sharer.php?u=https://as.com/meristation/plataformas/nintendo_ds/top">Comparte por Facebook</a></h1>
+        </div>
+        <div class="widget-2">
+            <h1><a href="https://twitter.com/intent/tweet?text=Comparte%20este%20articulo%20&url=https://as.com/meristation/plataformas/nintendo_ds/top&hashtags=MiprimerCompartidaPorTwitter">Comparte por twitter</a></h1>
+       
+        </div>
+        <div class="widget-vacio">
+
+        </div>
+        <footer class="footer">
+            <h1>Eduardo Campos Frias</h1>
+        </footer>
+
+        <button class="cir-cont" id="cir-cont">
+            <img src="svg/comentario.svg" alt="">
+        </button>
+        <div id="cont-form">
+            <form action="enviar.php" method="POST" class="container-form">
+
+                <label for="name" class="nombre">Nombre <span>*</span></label>
+                <input type="text" id="name" name="nombre" required>
+
+                <label for="email" class="correo">Correo <span>*</span></label>
+                <input type="email" id="email" name="correo" required>
+
+                <label for="coment" class="comentario">Comentario <span>*</span></label>
+                <textarea name="comentario" id="coment"></textarea>
+
+                <input type="submit" value="Enviar mensaje" id="btnenviar">
+
+                
+                <button id="close" class="btn-close">
+                    <img src="svg/cerrar.svg" alt="">
+                </button>
+            
+            </form>
+        </div>
+
+
+        <div class="mensaje">
+            <h1>¿Deseas darnos tu opinion?</h1>
+        </div>
+    </main> 
+
+
+    <script>
+        const modal=document.getElementById('cont-form');
+        const button=document.getElementById('cir-cont');
+        const close=document.getElementById('close');
+    
+        button.addEventListener('click', ()=>{
+            modal.style.display='block'
+        })
+        close.addEventListener('click',()=>{
+            modal.style.display='none'
+        })
+
+        var container= document.getElementById('container');
+  setTimeout(function(){ 
+      container.classList.add('cerrar');
+  },9000);
+
+
+  //setTimeout=permite ejecutar algo despues de ciertos segundos de la animacion
+        
+   
+
+
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+body{
+    margin:0;
+}
+html{
+    scroll-behavior: auto;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Krona+One&family=Poppins:wght@600&display=swap');
+
+
+
+:root{
+    --current-color: rgb(247, 186, 73);
+    --second-color: rgb(165, 164, 164);
+}
+
+
+.container h1{
+    text-align: center;
+
+    color: var(--second-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5em;
+
+    margin-top: 8%;
+}
+
+
+.container .enlaces, .seccion8 .svgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.seccion8{
+    width: 100%;
+}
+.seccion8 .svgs{
+    width: 100%;
+}
+.box-svg{
+    margin-left: 22.5%;
+    width: 50%;
+}
+.seccion8 .svgs .box-svg a img{
+    width: 7%;
+    margin-right: 2em;
+}
+.seccion8 .svgs .box-svg a:first-child{
+    margin-left: 5em;
+}
+.svgs h2{
+    color: var(--second-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+
+.enlaces a{
+    padding: 1em 1.5em;
+    /* border: 2px solid var(--current-color); */
+    box-shadow: 0 0 0 2px var(--current-color) ;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: var(--current-color);
+    text-decoration: none;
+
+    font-size: 1.2em;
+
+    border-radius: 2px;
+}
+.enlaces a:first-child{
+    text-transform: uppercase;
+}
+.enlaces a:hover{
+    color: white;
+    background-color: var(--current-color);
+    
+}
+
+
+.circles1 , .circles2{
+    background-color: var(--current-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 50%;
+    opacity: .5;
+
+    z-index: -10;
+}
+.circles1{
+    width: 10em;
+    height: 10em;
+}
+.circles2{
+    width: 5em;
+    height: 5em;
+    left: 10em;
+}
+.primera{
+    top: 7%;
+    left: 40%;
+}
+.sexta{
+    top: 77%;
+    left: 10%;
+}
+.segunda{
+    top: 15%;
+    left: 85%;
+}
+.septima{
+    top: 40%;
+    left: 50%;
+}
+.tercera{
+    top: 50%;
+    left: 65%;
+}
+.octava{
+    top: 10%;
+    left: 60%;
+}
+.cuarta{
+    top: 70%;
+    left: 30%;
+}
+.novena{
+    top: 5%;
+    left: 10%;
+}
+.quinta{
+    top: 30%;
+    left: 13%;
+}
+.decima{
+    top: 60%;
+    left: 90%;
+}
+
+
+.olas{
+    width: 100%;
+    background-color: rgb(247, 186, 73);
+    height: 30vh;
+    
+  animation:olas 4s ease-in-out infinite;
+  position: absolute;
+  bottom: 0;
+
+}
+@keyframes olas{
+    0%,100%{
+      clip-path: polygon(0% 45%,15% 44%, 32% 50%,54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,0% 100%);
+    }
+    50%{
+      clip-path: polygon(0 60%,16% 65%,34% 66%,51% 62%,67% 50%,84% 45%,100% 46%,100% 100% ,0% 100%);
+    }
+  }

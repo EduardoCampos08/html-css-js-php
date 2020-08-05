@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Campos Frias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../normalize.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu" id="menu">
+            <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../eduardo/index.html">EDUARDO</a></li>
+                <li><a href="../lugares/index.html">LUGARES</a></li>
+                <li><a href="../resultados/index.html">RESULTADOS</a></li>
+                <li><a href="../hablamos/index.html">HABLAMOS</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main class="container">
+        <section class="titleP">
+            <h1>¿Hablamos?</h1>
+        </section>
+        <section class="description">
+            <h3>Cuéntanos tu caso para que encontremos la solucion de Marketing más adecuada para tu negocio.</h3>
+        </section>
+        <section class="form">
+            <form action="enviar.php" method="POST">
+                <label for="names" class="nombre">Nombre</label>
+                <input type="text" id="names" name="nombre" placeholder="Nombre" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono"  maxlength="10">
+
+                
+                <label for="correo"  >Correo</label>
+                <input type="text" class="correo" id="correo" name="correo" required placeholder="Email">
+                <span id="emailOK" class="emailOK"></span>
+
+                <label for="interes">¿Que te interesa?</label>
+                <select name="interes" id="interes">
+                    <optgroup label="Lo que se hacer:">
+                        <option value="Diseño Web" selected>Diseño Web</option>
+                        <option value="Landing Page">Landing Page</option>
+                        <option value="Blog o Pagina Web solo informatica">Blog o Pagina Web solo informatica</option>
+                        <option value="Ayudame a ver que necesita mi negocio">Ayudame a ver que necesita mi negocio</option>
+                    </optgroup>
+                </select>
+
+                <label for="mensaje">¡Quiero saber mas sobre tu negocio!</label>
+                <textarea type="text" id="mensaje" name="mensaje" required placeholder="Más información..."></textarea>
+
+                <input type="submit" value="Enviar" id="btnenviar" class="btnenviar">
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <section class="seccion7">
+        <a href="#"><img src="../svg/flecha-hacia-arriba.svg" alt="Ir arriba" title="Ir al inicio"></a>
+        <article class="contacto">
+           
+            <h1>contacto</h1>
+            <p>Espero que disfruten de mi blog, si desea ponerse en
+                contacto conmigo o darme un consejo para mi sitio,
+                escribeme un mensaje y yo sere feliz en contestar.
+            </p>
+        </article>
+    </section>
+    <hr>
+    <footer class="seccion8">
+        <article class="email">
+            <a href="mailto:eduardo081001@gmail.com?subject=Dame%20tu%20opinion">eduardo081001@gmail.com</a>
+        </article>
+        <article class="svgs">
+            <div class="box-svg">
+                <a href="#"><img src="../svg/facebook.svg" alt=""></a>
+                <a href="#"><img src="../svg/twitter.svg" alt=""></a>
+                <a href="#"><img src="../svg/youtube.svg" alt=""></a>
+            </div>
+        </article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="validacion.js"></script>
+</body>
+</html>

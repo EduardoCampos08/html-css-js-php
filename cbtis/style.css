@@ -1,0 +1,205 @@
+body{
+     background: rgb(241,231,103);
+    background: linear-gradient(0deg, rgba(241,231,103,1) 25%, rgba(230,89,67,1) 73%); 
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+}
+
+
+
+/*estilos de las estrellas*/
+.estrella{
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+
+    border-radius: 50%;
+
+
+}
+.primera{
+    top: 30%;
+    left: 50%;
+}
+.segunda{
+    top: 20%;
+    left: 30%;
+}
+.tercera{
+    top: 70%;
+    left: 50%;
+}
+.cuarta{
+    top: 50%;
+    left: 20%;
+}
+.quinta{
+    top: 80%;
+    left: 30%;
+}
+.sexta{
+    top: 10%;
+    left: 85%;
+}
+.septima{
+    top: 80%;
+    left: 70%;
+}
+.octava{
+    top: 70%;
+    left: 50%;
+}
+.novena{
+    top: 50%;
+    left: 80%;
+}
+.decima{
+    top: 40%;
+    left: 90%;
+}
+.onceava{
+    top: 20%;
+    left: 90%;
+}
+.doceava{
+    top: 10%;
+    left: 40%;
+}
+.treceavo{
+    top:  20%;
+    left: 30%;
+}
+.catorceavo{
+    top: 80%;
+    left: 90%;
+}
+.quinceavo{
+    top: 15%;
+    left: 70%;
+}
+.decimosexto{
+    top: 5%;
+    left: 20%;
+}
+.decimoséptimo{
+    top: 15%;
+    left: 20%;
+}
+.decimoctavo{
+    top:40%;
+    left:8%;
+}
+.estrella:nth-child(2n){
+    -webkit-animation: estrella-par 2s infinite;
+}
+@-webkit-keyframes estrella-par{
+    0%,80%{
+        box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+    }
+    100%{
+        box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+    }
+}
+.estrella:nth-child(2n+1){
+    -webkit-animation: estrella-impar 2s infinite;
+}
+@-webkit-keyframes estrella-impar{
+    0% ,35%,50%{
+        box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+    }
+    45%{
+        box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+    }
+}
+
+
+/*estilos de la tierra,nubes */
+
+
+
+.mapa{
+
+    background-image: url("imgs/tierra.png");
+
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -200px;
+    bottom:0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    box-shadow: -30px -20px 0 0 rgba(0,0,0,.10) inset,
+    -70px -40px 0 0 rgba(0,0,0,.3)inset,
+    5px 5px 0 0 rgba(255,255,255,.2)inset;
+    background-image: url(imgs/tierra.png);
+    background-size: cover;
+
+    -webkit-animation: tierra-girando 5s infinite linear;
+
+}
+@-webkit-keyframes tierra-girando{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -396px center;
+    }
+}
+
+.nubes{
+    background-image: url("imgs/nubes.png");
+
+    -moz-background-size: 220px 220px;
+    -webkit-background-size: 220px 220px;
+    -o-background-size: 220px 220px;
+    background-size: 220px 220px;
+  
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -200px;
+    bottom:0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+
+
+.texto {
+    font-size: 3em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    position: absolute;
+    top:60%;
+    left: 15%;
+}
+.text{
+    color: tomato;
+}
+
+
+
+
+
+

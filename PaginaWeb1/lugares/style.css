@@ -1,0 +1,188 @@
+body{
+    margin:0;
+}
+html{
+    scroll-behavior: auto;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Krona+One&family=Poppins:wght@600&display=swap');
+
+
+
+:root{
+    --current-color: rgb(247, 186, 73);
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: .5m;
+}
+.menu li{
+    padding: 1em 1.5em;
+    margin-right: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0,0,0, .5);
+    
+    box-shadow: 0 0 4px black;
+    position: relative;
+    cursor: pointer;
+}
+.menu li:before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 0;
+    background-color: rgba(0,0,0, .3);
+    left: 0;
+    top: 0;
+
+    transition: ease-in-out .5s all;
+}
+.menu li::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 0;
+    background-color: rgba(0,0,0, .3);
+    right: 0;
+    top: 0;
+
+    transition: ease-in-out .5s all;
+}
+.menu li:hover:before,.menu li:hover:after{
+    height: 100%;
+}
+
+
+
+
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+}
+
+.container .titleP{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: rgb(247, 186, 73);
+    height: 10vh;
+}
+.container .description{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background-color: red;
+    height: 15vh;
+}
+.container .container-tarjetas{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    background-color: lime;
+    height: 80vh;
+}
+
+
+
+
+
+.seccion7{
+    width: 100%,
+}
+.seccion7 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion7 a img{
+    width: 5%;
+}
+.seccion7 .contacto{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url(https://images.pexels.com/photos/34753/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+    background-position-Y: -44vh;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion7 .contacto h1 , .seccion7 .contacto p{
+    position: absolute;
+}
+.seccion7 .contacto h1{
+    bottom: 1.2em;
+    font-family: 'Krona One', sans-serif;
+    font-size: 5em;
+    color: white;
+    letter-spacing: .3em;
+}
+.seccion7 .contacto h1::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    bottom: -20%;
+    left: 15%;
+    background-color: white;
+}
+.seccion7 .contacto p{
+    bottom: .5em;
+    width: 40%;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+.seccion8{
+    width: 100%;
+}
+.seccion8 .email{
+    width: 50%;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion8 .email a{
+    color: gray;
+    font-size: 1.2em;
+    text-decoration: none;
+    position: relative;
+    margin: .7em;
+}
+.seccion8 .email a::before{
+    content: url(svg/correo.svg);
+    width: 10%;
+    position: absolute;
+    left: -10%;
+}
+.seccion8 .svgs{
+    width: 50%;
+    float: right;
+}
+.seccion8 .svgs .box-svg a img{
+    width: 7%;
+    margin-right: 2em;
+}
+.seccion8 .svgs .box-svg a:first-child{
+    margin-left: 5em;
+}

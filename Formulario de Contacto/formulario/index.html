@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+<div class="contenedorprincipal1">
+    <form action="enviar.php" method="post">
+        <label for="names" class="nombre">Nombre *</label>
+        <input type="text" id="names" name="nombre" required>
+
+        <label for="telefono">Telefono</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <span id="emailOK" class="emailOK"></span>
+        <label for="correo">Correo *</label>
+        <input type="text" id="correo" name="correo" required>
+
+
+        <label for="mensaje">Mensaje *</label>
+        <textarea type="text" id="mensaje" name="mensaje" required></textarea>
+
+        <input type="submit" value="Enviar mensaje" id="btnenviar">
+    </form>
+</div>
+
+
+<script src="validacion.js">
+</script>
+</body>
+</html>

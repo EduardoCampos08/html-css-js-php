@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+main{
+    width: 50%;
+    background-color: cadetblue;
+    max-width: 1000px;
+    margin: auto;
+}
+.pantalla{
+    display: grid;
+    
+}
+#pantalla{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+#suma{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+h1{
+    text-align: center;
+}

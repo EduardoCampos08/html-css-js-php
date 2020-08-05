@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 10px;
+    text-align: center;
+    background-color: royalblue;
+    font-size: 1.5em;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+}
+.column img:hover{
+    box-shadow: 0 1px 50px black;
+}
+.column img{
+    padding-top: 5px;
+}
+
+@media (max-width:800px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width:600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}

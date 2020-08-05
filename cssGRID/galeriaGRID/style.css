@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    background-color: #e90c55;
+}
+*{
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: auto;
+    grid-gap: 10px;
+}
+img{
+    width: 100%;
+    height: 250px;
+    box-shadow: 5px 5px 10px black;
+}
+h1, h2{
+    text-align: center;
+    color: white;
+}
+.segundo{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 8);
+}
+
+.fotogrande{
+    grid-row-start:2 ;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+footer{
+    box-shadow: 3px 3px 10px rgba(0, 0,0,.5);
+   
+}
+/* Dispositivos extra pequeños (telefonos,600px y
+abajo) */
+@media only screen and (max-width: 600px) {
+    .contenedor{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        grid-gap: 10px;
+        height: 200px;
+    }
+  }
+  
+  /* Dispositivos pequeños (tabletas verticales y
+  telefonos grandes,600px y mas)*/
+  @media only screen and (min-width: 600px) {
+    .contenedor{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        grid-gap: 10px;
+        height: 200px;
+    }
+  }
+  
+  /*Dispositivos medianos (tabeltas horizontales,
+  768px y mas)*/
+  @media only screen and (min-width: 768px) {
+    .contenedor{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        grid-gap: 10px;
+        height: 200px;
+    }
+  } 
+  
+  /* Disposotivos grandes (computadoras portatiles
+  y computadoras de escritorio,992px y mas) */
+  @media only screen and (min-width: 992px) {
+    .contenedor{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin: auto;
+        grid-gap: 10px;
+    }
+  } 
+  
+  /* Dispositivos extra grandes (laptops y computadoras
+  de escritorio grandes, 1200px y superiores) */
+  @media only screen and (min-width: 1200px) {
+    .contenedor{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin: auto;
+        grid-gap: 10px;
+    }
+  }
+

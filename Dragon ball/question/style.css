@@ -1,0 +1,200 @@
+body{
+    margin:0;
+    scroll-behavior: smooth;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.preolader{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 0;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+.esfera1,.esfera2,.esfera3,.esfera4,.esfera5,.esfera6,.esfera7{
+    width: 4em;
+    height: 4em;
+    background: radial-gradient(circle at top left,yellow, #f06d06); 
+    border-radius: 50%;
+    margin-left: .5em;
+}
+.preolader div:nth-child(2n){
+    animation-name: preolader;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1, 0.5, 0.5, 1);
+
+}
+.preolader div:nth-child(2n+1){
+    animation-name: preolader2;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1, 0.5, 0.5, 1);
+ 
+} 
+.cerrar{
+    transform: translateY(-100%);
+    transition: all 0.5s;
+}
+@keyframes preolader {
+    0%,100%{
+        margin-bottom: 0;
+    }
+    40%{
+        margin-bottom: 5em;  
+    }
+    80%{
+        margin-top: 5em;
+    }
+
+}
+@keyframes preolader2 {
+    0%,100%{
+        margin-top: 0;
+    }
+    40%{
+        margin-top: 5em;  
+    }
+    80%{
+        margin-bottom: 5em;
+    }
+} 
+
+
+
+
+/* maquetado con css grid ,para container */
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+                        
+                        "nav        nav         nav         nav"
+                        "section    section     section     aside"
+                        "footer     footer      footer      footer";
+    
+}
+
+
+/* menu de navegacion */
+.nav{
+    width: 100%;
+    background-color: white;
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav ul{
+    margin: 0;
+    display: flex; 
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul a img{
+    width: 3.5em;
+
+}
+.nav ul li {
+    padding: 1em;
+
+}
+.nav ul li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+.section{
+    background-color: white;
+    grid-area: section;
+}
+.section h1{
+    background-color: orangered;
+    margin: 0;
+    color: white;
+}
+.box-preguntas{
+    background-color: rgba(255, 136, 0, .4);
+    border: 2px dashed whitesmoke;
+}
+.box-preguntas .respuesta{
+    padding-left: 2em;
+    font: smaller sans-serif;
+}
+.box-preguntas .pregunta{
+    padding-left: 1em;
+    color: orangered;
+}
+.box-preguntas .respuesta input:hover{
+    border-color: orangered;
+}
+.btn-resul{
+    border: none;
+    background-color: rgba(206, 71, 22, 0.685);
+    margin-left: 1em;
+    color: white;
+    border-radius: 10px;
+}
+.btn-resul:hover{
+    color: rgba(206, 71, 22, 0.685);
+    background-color: white;
+}
+
+
+
+
+.aside{
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    grid-area: aside;
+    
+    position: sticky;
+    top:13vh;
+
+}
+.title-aside{
+    color: orange;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+.aside p{
+    color: lightsalmon;
+    text-align: center;
+}
+
+
+
+
+
+.footer{
+    grid-area: footer;
+    background-color:white,;
+}
+.footer-facebook img{
+    width: 10%;
+    height: 2em;
+}
+.footer-twitter img{
+    width: 10%;
+    height: 2em;
+}
+.footer-whatsapp img{
+    width: 10%;
+    height: 2em;
+}

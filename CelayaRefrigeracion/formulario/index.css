@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.contenedorTotal{
+    width: 100%;
+    height: 653px;
+    background-color: white;
+    position: relative;
+}
+.clip{
+    clip-path: polygon(100% 0%, 100% 52%, 100% 100%, 75% 100%, 50% 50%, 75% 0);
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+    height: 653px;
+}
+.clip h1{
+    color: white;
+    position: absolute;
+    right: 0;
+    top:35%;                                                                                                                                                                                                     
+
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contenedorprincipal1{
+    width: 30%;
+    height: 50%;
+    background: #7e8ed8;
+    margin: 0 auto;
+
+    box-shadow: #777575 0 5px 5px 0;
+}
+.nombre{
+    padding: 0;
+}
+label{
+    width: 90%;
+    height: auto;
+float: left;
+    padding-top: 1em;
+
+    font-size: 2em;
+}
+input{
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+}
+textarea{
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 1em;
+}
+
+#btnenviar {
+    margin-bottom: 1em;
+    border-radius: 10px;
+    background: #0f17d8;
+    border: none;
+
+    color: white;
+    font-size: 1em;
+
+    transition: .3s;
+}
+#btnenviar:hover{
+    background: #52b7d8;
+}
+
+.emailOK{
+    background: red;
+    width: 5em;
+    float: right;
+   position: absolute;
+    top:13em;
+    left: 53em;
+
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+}
+
+@media (min-width: 200px) {
+    .emailOK{
+
+        position: absolute;
+        top:13em;
+        left: 37em;
+
+    }
+}
+
+#correo{
+    border: none ;
+    border-radius: 4px ;
+}
+#correo:valid{
+    background-color: yellowgreen;
+}
+
+#correo:invalid{
+    background-color: red;
+}

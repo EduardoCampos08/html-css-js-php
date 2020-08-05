@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-background: hsl(0, 100%, 50%);
+}
+h1{
+    color: cadetblue;
+    text-align: center;
+}
+.contenedor{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin: auto;
+}
+.uno ,.dos,.tres,.cuatro,.cinco,.seis,.siete,.ocho,.nueve{
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(10,1fr);
+    text-align: center;
+
+    box-shadow: 0 0 20px black;
+}
+
+
+
+.fila-numerador{
+    background-color: var(--color-background);
+}
+.columna-resultado{
+    background-color: rgb(95, 68, 68);
+    color:white;
+}

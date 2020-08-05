@@ -1,0 +1,284 @@
+body{
+    background: white;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+/*Variables coloress*/
+:root{
+    --color1--background-color:#002040;
+    --color2--background-color:#0060BF;
+    --color3--background-color:#445475;
+    --color4--background-color:#1860A7;
+    --color5--background-color:#4B7ABB;
+    --color6--background-color:#769FBB;
+    --color7--background-color:#6e838b;
+}
+
+/*Estilos paera el encabezado*/
+
+.Encabezado{
+    width: 100%;
+    height: 200px;
+
+    position: relative;
+    overflow:hidden;
+    display: flex;
+}
+.Encabezado .ContenedorClip{
+    
+    background-color: var(--color6--background-color);
+    position: absolute;
+    width:100%;
+    height: 200px;
+    clip-path: polygon(0 53%, 100% 53%, 100% 100%, 0 100%);
+}
+
+.Encabezado h1 , .Encabezado .ContenedorClip h1{
+    position:absolute;
+    top:calc(50%-100px);
+    width:100%;
+    text-align:center;
+    font-size:4em;
+    color:#fff; 
+     margin-top: .3em;
+    padding: 0;
+
+    letter-spacing: .8em;
+}
+.Encabezado h1{
+    color: var(--color6--background-color);
+}
+
+
+/*Estilos del menu*/
+
+.Menu{
+    list-style: none;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    background-color: var(--color7--background-color);
+}
+@media screen and (max-width: 700px) {
+    .Menu {   
+      flex-direction: column;
+      align-items: center;
+    }
+    .Barra{
+        display: flex;
+        flex-direction: column;
+    }
+    .ContenedorTarjetasInformarticas{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .btn-empezar a{
+        color: white;
+         text-decoration: none;
+         font-family: Arial;
+         font-size: .5em;
+         text-align: center;
+         text-shadow: .5px .5px 1px white;
+     
+     }
+     
+
+  }
+
+
+.Menu-Item{
+    padding:1em;
+    position: relative;
+    margin-left: 3em;
+    transition: .4s ease all;
+}
+.Menu-Item::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: white;
+
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+
+    transition: .4s ease all;
+}
+
+.Menu-Item:hover:before{
+    width: 100%;
+}
+
+.Menu .Menu-Item a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.Menu-Item:hover{
+    background-color: rgba(0, 0, 0, .16);
+}
+
+/*estilos reportes centrales*/
+.ContenedorTarjetasInformarticas{
+    width: 70%;
+    height: 500px;
+    background-color: var(--color6--background-color);
+    float: left;
+    overflow: scroll;
+}
+.ContenedorTarjetasInformarticas::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.ContenedorTarjetasInformarticas::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.ContenedorTarjetasInformarticas::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.ContenedorTarjetasInformarticas::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.ContenedorTarjetasInformarticas::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.ContenedorTarjetasInformarticas::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.Tarjeta{
+    width: 100%;
+    height: 300px;
+    background-color: var(--color1--background-color);
+}
+.Tarjeta:nth-child(2){
+    background-color: var(--color6--background-color);
+}
+
+
+
+
+/*estilos barra lateral*/
+.Barra{
+    width: 30%;
+    height: 500px;
+    background-color: var(--color7--background-color);
+    float: right;
+}
+.Barra .Ubicacion iframe{
+    width: 100%;
+    height: 200px;
+}
+.Barra .Ubicacion h1{
+    text-align: center;
+    cursor: pointer;
+}
+.Barra .Ubicacion a{
+    color: white;
+    text-decoration: none;
+}
+.Barra .Ubicacion h1:hover a{
+    text-decoration: underline;
+}
+
+
+
+
+/*estilos del boton formulario servicior*/
+
+.btn-empezar{
+    background-color: var(--color7--background-color);
+   
+    border:none;
+    width: 100%;
+    height: 200px;
+    color: white;
+    transition: .4s ease-in-out all;
+    position: relative;
+}
+.btn-empezar a{
+   color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: .5px .5px 1px white;
+
+    animation-name: moverLetrasClick;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverLetrasClick{
+    0%,100%{
+        margin: 0;
+    }
+    20%{
+        margin-left: .25em;
+    }
+    40%{
+        margin-left: .5em;
+    }
+    60%{
+        margin-right: .25em;
+    }
+    80%{
+        margin-right: .5em;
+    }
+
+}
+.btn-empezar:hover {
+    background-color: white;
+}
+.btn-empezar:hover a{
+    color: var(--color7--background-color);
+}
+
+.btn-empezar::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+
+    box-shadow: 404.7px -197px black;
+
+    transition: .5s ease all;
+}
+.btn-empezar:hover:before{
+    box-shadow: 0 -197px black;
+    width: 100%;
+}
+.btn-empezar::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: black;
+    left: 0;
+    top:0;
+
+    box-shadow:404.7px -197px black;
+
+    transition: .5s ease all;
+}
+.btn-empezar:hover:after{
+    box-shadow:401.7px 0 black;
+    height: 100%;
+}
+
