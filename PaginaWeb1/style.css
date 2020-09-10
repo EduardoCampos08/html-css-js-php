@@ -37,11 +37,25 @@ html{
 }
 .header h1{
     position: absolute;
-    color: rgba(255,255,255, .7);
+    /* color: rgba(255,255,255, .7); */
+    color: rgba(82, 79, 79, 0.6);
     font-size: 5em;
-    margin-top: -.4em;
+    margin-bottom: 2em;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
+
+    position: relative;
+}
+.header h1::before{
+    position: absolute;
+    top: .2em;
+    left: 2em;
+    content: '';
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
 }
 
 nav{
@@ -289,8 +303,7 @@ nav{
     width: 50%;
 }
 .seccion3 .img-32 img{
-    
-    width: 50.1%;
+    width: 80%;
 }
 .seccion3 .img-32 a{
     border: 2px solid var(--current-color) ;
@@ -313,27 +326,59 @@ nav{
     height: 100vh;
     position: absolute;
     left: 0;
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(82, 79, 79, 1);
     z-index: 10000;
     display: none;
 
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
 
     color: white;
 }
 .seccion-31:target{
+    display: block;
+}
+.seccion-31 .img-311{
+    float: left;
+    width: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-31 .title-parrafo-311{
+    float: right;
+    width: 50%;
+}
+.seccion-31 .img-311 .img-31111{
+    margin-top: 20%;
 }
 .seccion-31 .img-311 img{
     /* filter: saturate(30%)
             drop-shadow(5px 9px 2px gray)
             blur(.8px); */
-        filter: grayscale(100%)
-        blur(1px);
+        filter: grayscale(70%)
+        blur(.5px);
+        width: 60%;
+        margin-top: 10%;
 }
 
+.seccion-31 .title-parrafo-311 a{
+    display: block;
+    padding: 1em 1.5em;
+    background-color: var(--current-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+
+    /* position: absolute;
+    top: 65%;
+    left: 65%; */
+}
+.title-parrafo-311 h2{
+    margin-top: 20%;
+    color: var(--current-color);
+    font-size: 3em;
+}
 
 
 
@@ -558,3 +603,43 @@ nav{
 .seccion8 .svgs .box-svg a:first-child{
     margin-left: 5em;
 }
+
+
+
+
+
+/* Dispositivos extra pequeños (telefonos,600px y
+abajo) */
+@media only screen and (max-width: 600px) {
+
+    
+}
+  /* Dispositivos pequeños (tabletas verticales y
+  telefonos grandes,600px y mas)*/
+  @media only screen and (min-width: 500px) {
+    
+
+    
+  }
+  
+  /*Dispositivos medianos (tabeltas horizontales,
+  768px y mas)*/
+  @media only screen and (min-width: 768px) {
+   
+  } 
+  
+  /* Disposotivos grandes (computadoras portatiles
+  y computadoras de escritorio,992px y mas) */
+  @media only screen and (min-width: 992px) {
+    
+    
+    
+  } 
+  
+  /* Dispositivos extra grandes (laptops y computadoras
+  de escritorio grandes, 1200px y superiores) */
+  @media only screen and (min-width: 1200px) {
+    
+    
+    
+  }

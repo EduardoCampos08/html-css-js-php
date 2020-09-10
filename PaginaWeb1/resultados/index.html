@@ -6,31 +6,363 @@
     <title>Eduardo Campos Frias</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../var.css">
+    <link rel="stylesheet" href="../RWD-header-footer-nav.css">
 </head>
 <body>
     <nav>
+        <a href="#menu" id="home"><img src="../svg/menu.svg" alt=""></a>
         <ul class="menu" id="menu">
-            <li>inicio</li>
-            <li>eduardo</li>
-            <li>lugares</li>
-            <li>resultados</li>
-            <li>hablamos</li>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../eduardo/index.html">EDUARDO</a></li>
+            <li><a href="../lugares/index.html">LUGARES</a></li>
+            <li><a href="../resultados/index.html">MIS CONOCIMIENTOS</a></li>
+            <li><a href="../hablamos/index.html">CONTACTO</a></li>
+            <a href="#home"><img src="../svg/cerrar.svg" alt=""></a>
         </ul>
     </nav>
 
-    
     <main class="container">
         <section class="titleP">
-
+            <h1>Como conoci la WEB.</h1>
         </section>
         <section class="imgMia">
-
+            <img src="../imgs/yo-programnado.jpg" alt="">
         </section>
         <section class="parrafoDescription">
-
+            <p>
+                Yo comenze con la programacion cuando tenia 15 años que fue cuando entre a la preparatoria tome la 
+                especialidad de programacion que era un poco de todo el entorno de programacion empezando por 
+                pseint que es hacer programacion con lenguaje natural sin saber un lenguaje a la par aprendi Java
+                con base de datos que fue MySQL, para posterior aprender POO con conexion a base de datos.A mi en lo 
+                particular no me gustaba mucho estos lenguajes me intersaba mas la WEB que antes de mi semestre me llamo
+                la atencion el mundo de la WEB fue como empeze a ver cursos de HTML, CSS lo fui haciendo poco a poco cuando
+                llego el semestre de esta materia no se me dificulto solo porque tuve que aprender un poco PHP y a la par 
+                aplicaciones para moviles.Despues de este semestre aprendi un poco de redes y sistemas operativos al igual
+                que la anteriores cosas no me convencia mucho estos temas por eso fue que decidi que a la par estudiaria mas
+                sobre la WEB de ahi empeze a hacer paginas sencillas para mi de manera de practica viendo tutoriales o 
+                trucos de CSS empeze a poner un poco de JavaScript de ahi en adelante fue que decidi que seria Desarrolador
+                WEB ya sea primero como Frontend que para mi es la mejor parte es la del diseño porque debes dejar a tu cabeza
+                pensar que vuele dejar que haga cosas increibles yo digo que la manera de hacer esto es haciendo lo que mas 
+                te gusta en mi caso lo hago distrañendo mi mente ver un video, salir en bicicleta, ver naturaleza asi mi
+                cerebro puede decir que tal si ponemos esto o esto aca el solo va diciendo que hacer y que poner si algo no 
+                puedo hacerlo ver como se hace para aprender pero jamas decir no se puede.
+            </p>
+            <blockquote>
+                Aprende,disfruta,practica,siente agusto y feliz en lo que te guste hacer , si te gusta la cocina 
+                cocina pero no dejes que te digan que no se puede.SIGUE TU PASION.   
+            </blockquote>
         </section>
-        <section class="lenguajesAprendidos">
+        <section class="lenguajesAprendidos" id="lenguajes">
+            <h1>Mis conocimientos</h1>
+            <article class="tarjetas html">
+                <img src="../svg/html5.svg" alt="">
+                <h1>HTML</h1>
+                <h2>¿Para que es?</h2>
+                <p>HTML es la estructura de la WEB.</p>  <!-- los ... significan poner mas texto -->
+                <h3>?Quieres saber como aprendi yo esta materia? y ¿Que es HTML?</h3>
+                <p>Entra al link de abajo y ve todo.</p>
+                <a href="#modal-html">Saber mas</a>
+            </article>
+            <!-- falta modal de cada tarjeta HTMl -->
+            <article class="modal" id="modal-html">
+                <section class="titlesP-modal">
+                    <h1>¿Como aprendi HTMl?</h1>
+                </section>
+                <section class="close">
+                    <a href="#lenguajes"><img src="../svg/cerrar.svg" alt=""></a>
+                </section>
+                <section class="imgs-modal">
+                    <div class="container-imgP">
+                        <img src="../imgs/cascada-chamacuaro.jpg" alt="">
+                    </div>
+                </section>
+                <section class="parrafosP-modal">
+                    <div class="container-parrafosP-modal">
+                        <p>Para poder empezar en el camino del desarrollo web primero se debe saber la base de la web que HTMl.Inice aprendiendo este lenguaje de marcado
+                            cuando entre a 4º semestre de preparatoria empeze a hacer paginas sin estilos asi dure 15 dias hasta ver varios cursos y asi poco a poco se me fue quedano
+                            lo aprendido lo importante es la practica.
+                        </p>
+                    </div>
+                </section>
+                <section class="titlesS-modal">
+                    <h1>¿Que es HTMl?</h1>
+                </section>
+                <section class="parrafosS-modal">
+                    <div class="container-parradosS">
+                        <p>HTML no es un lenguaje de programación, esto debes tenerlo muy en claro desde el principio, HTML es un lenguaje de marcado de hipertexto o “HyperText Markup Language” por el desarrollo de sus iniciales en inglés, básicamente este lenguaje se escribe en su totalidad con elementos, estos elementos están constituidos por etiquetas, contenido y atributos, que explicaremos de una manera más detallada en algunas líneas más abajo.
+                            <br> <br> HTML es un lenguaje que interpreta el navegador web para mostrar los sitios o aplicaciones web tal y como estamos acostumbrados.</p>
+                            <p>
+                                En esta imagen podemos ver como se ve nuestra web con HTML y CSS
+                            </p>
+                           <div class="containerParrafosS-img"> <img src="../imgs/captura-webmia.png" alt="Pagina de Eduardo Campos Frias"> </div>
+                            <p>
+                                En esta imagen vemos la pagina sin estilos CSS solamente con HTML.
+                            </p>
+                            <div class="containerParrafosS-img"><img src="../imgs/captura-webmiasincss.png" alt="Pagina de Eduardo Campos Frias"></div>
+                            <p>
+                                En esta imagen verás cómo se ve en lenguaje HTML.
+                            </p>
+                            <div class="containerParrafosS-img"><img src="../imgs/captura-webmiaelcodigohtml.png" alt="Pagina de Eduardo Campos Frias"></div>
+                    </div>
+                </section>
+                <section class="titleT-modal">
+                    <h1>Aprende HTML desde cero</h1>
+                </section>
+                <section class="videos-modal">
+                    <div class="container-videomodal">
+                        <iframe  src="https://www.youtube.com/embed/50RbVujPPGs" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
+                <section class="parrafoV-modal">
+                    <div class="container-parrafoV-modal">
+                        <p>Si quieres aprender HTMl tye invito a mi curso totalmente gratis</p>
+                        <a href="">Entra a este link para empezar el curso</a>
+                    </div>
+                </section>
+            </article>
+            <article class="tarjetas css">
+                <img src="../svg/css-3.svg" alt="">
+                <h1>CSS</h1>
+                <h2>¿Para que es?</h2>
+                <p>CSS les da vida a nuestra web.</p>  <!-- los ... significan poner mas texto -->
+                <h3>¿Quieres saber como aprendi yo esta materia? y ¿Que es CSS?</h3>
+                <p>Entra al link de abajo y ve todo.</p>
+                <a href="#modal-css">Saber mas</a>
+            </article>
             
+                <!-- falta modal de cada tarjeta CSS -->
+                <article class="modal" id="modal-css">
+                    <section class="titlesP-modal">
+
+                    </section>
+                    <section class="close">
+                        
+                    </section>
+                    <section class="imgs-modal">
+
+                    </section>
+                    <section class="parrafosP-modal">
+
+                    </section>
+                    <section class="titlesS-modal">
+
+                    </section>
+                    <section class="parrafosS-modal">
+
+                    </section>
+                    <section class="titleT-modal">
+
+                    </section>
+                    <section class="videos-modal">
+
+                    </section>
+                    <section class="parrafoV-modal">
+                    
+                    </section>
+                </article>
+            <article class="tarjetas js">
+                <img src="../svg/script-java.svg" alt="">
+                <h1>JavaScript</h1>
+                <h2>¿Para que es?</h2>
+                <p>JavaScript el unico lenguaje de la web.</p>  <!-- los ... significan poner mas texto -->
+                <h3>¿Quieres saber como aprendi yo esta materia? y ¿Que es JavaScript?</h3>
+                <p>Entra al link de abajo y ve todo.</p>
+                <a href="#modal-js">Saber mas</a>
+            </article>
+            <!-- falta modal de cada tarjeta JS-->
+            <article class="modal" id="modal-js">
+                <section class="titlesP-modal">
+
+                </section>
+                <section class="close">
+                    
+                </section>
+                <section class="imgs-modal">
+
+                </section>
+                <section class="parrafosP-modal">
+
+                </section>
+                <section class="titlesS-modal">
+
+                </section>
+                <section class="parrafosS-modal">
+
+                </section>
+                <section class="titleT-modal">
+
+                </section>
+                <section class="videos-modal">
+
+                </section>
+                <section class="parrafoV-modal">
+                
+                </section>
+            </article>
+            <article class="tarjetas grid">
+                <img src="../svg/diseno.svg" alt="">
+                <h1>CSS Grid Layout</h1>
+                <h2>¿Para que es?</h2>
+                <p>CSS Grid nos ayuda a la maquetacion.</p>  <!-- los ... significan poner mas texto -->
+                <h3>¿Quieres saber como aprendi yo esta materia? y ¿Que es Css Grid?</h3>
+                <p>Entra al link de abajo y ve todo.</p>
+                <a href="#modal-grid">Saber mas</a>
+            </article>
+
+            <!-- falta modal de cada tarjeta CSS grid-->
+            <article class="modal" id="modal-grid">
+                <section class="titlesP-modal">
+
+                </section>
+                <section class="close">
+                    
+                </section>
+                <section class="imgs-modal">
+
+                </section>
+                <section class="parrafosP-modal">
+
+                </section>
+                <section class="titlesS-modal">
+
+                </section>
+                <section class="parrafosS-modal">
+
+                </section>
+                <section class="titleT-modal">
+
+                </section>
+                <section class="videos-modal">
+
+                </section>
+                <section class="parrafoV-modal">
+                
+                </section>
+            </article>
+            <article class="tarjetas flex">
+                <img src="../svg/analitica.svg" alt="">
+                <h1>FlexBox</h1>
+                <h2>¿Para que es?</h2>
+                <p>FlexBox ayuda a alinear y maquetar elementos.</p>  <!-- los ... significan poner mas texto -->
+                <h3>¿Quieres saber como aprendi yo esta materia? y ¿Que es FlexBox?</h3>
+                <p>Entra al link de abajo y ve todo.</p>
+                <a href="#modal-flex">Saber mas</a>
+            </article>
+
+            <!-- falta modal de cada tarjeta flex-box-->
+            <article class="modal" id="modal-flex">
+                <section class="titlesP-modal">
+
+                </section>
+                <section class="close">
+                    
+                </section>
+                <section class="imgs-modal">
+
+                </section>
+                <section class="parrafosP-modal">
+
+                </section>
+                <section class="titlesS-modal">
+
+                </section>
+                <section class="parrafosS-modal">
+
+                </section>
+                <section class="titleT-modal">
+
+                </section>
+                <section class="videos-modal">
+
+                </section>
+                <section class="parrafoV-modal">
+                
+                </section>
+            </article>
+            <article class="tarjetas seo">
+                <img src="../svg/investigacion.svg" alt="">
+                <h1>SEO</h1>
+                <h2>¿Para que es?</h2>
+                <p>SEO posicionamiento de busqueda en Google.</p>  <!-- los ... significan poner mas texto -->
+                <h3>¿Quieres saber como aprendi yo esta materia? y ¿Que es SEO?</h3>
+                <p>Entra al link de abajo y ve todo.</p>
+                <a href="#modal-seo">Saber mas</a>
+            </article>
+
+            <!-- falta modal de cada tarjeta SEO-->
+            <article class="modal" id="modal-seo">
+                <section class="titlesP-modal">
+
+                </section>
+                <section class="close">
+                    
+                </section>
+                <section class="imgs-modal">
+
+                </section>
+                <section class="parrafosP-modal">
+
+                </section>
+                <section class="titlesS-modal">
+
+                </section>
+                <section class="parrafosS-modal">
+
+                </section>
+                <section class="titleT-modal">
+
+                </section>
+                <section class="videos-modal">
+
+                </section>
+                <section class="parrafoV-modal">
+                
+                </section>
+            </article>
+            <article class="tarjetas svg">
+                <img src="../svg/svg.svg" alt="">
+                <h1>SVG</h1>
+                <h2>¿Para que es?</h2>
+                <p>SVG creacion de iconos sin quitar calidad.</p>  <!-- los ... significan poner mas texto -->
+                <h3>¿Quieres saber como aprendi yo esta materia? y ¿Que es SVG?</h3>
+                <p>Entra al link de abajo y ve todo.</p>
+                <a href="#modal-svg">Saber mas</a>
+            </article>
+
+            <!-- falta modal de cada tarjeta -->
+            <article class="modal" id="modal-svg">
+                <section class="titlesP-modal">
+
+                </section>
+                <section class="close">
+                    
+                </section>
+                <section class="imgs-modal">
+
+                </section>
+                <section class="parrafosP-modal">
+
+                </section>
+                <section class="titlesS-modal">
+
+                </section>
+                <section class="parrafosS-modal">
+
+                </section>
+                <section class="titleT-modal">
+
+                </section>
+                <section class="videos-modal">
+
+                </section>
+                <section class="parrafoV-modal">
+                
+                </section>
+            </article>
         </section>
     </main>
 
@@ -48,7 +380,7 @@
             </p>
         </article>
     </section>
-    <hr>
+    
     <footer class="seccion8">
         <article class="email">
             <a href="mailto:eduardo081001@gmail.com?subject=Dame%20tu%20opinion">eduardo081001@gmail.com</a>
@@ -58,6 +390,8 @@
                 <a href="#"><img src="../svg/facebook.svg" alt=""></a>
                 <a href="#"><img src="../svg/twitter.svg" alt=""></a>
                 <a href="#"><img src="../svg/youtube.svg" alt=""></a>
+                <a href="#"><img src="../svg/github.svg" alt=""></a>
+                <a href="#"><img src="../svg/linkedin.svg" alt=""></a>
             </div>
         </article>
     </footer>

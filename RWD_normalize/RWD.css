@@ -1,0 +1,35 @@
+/* Dispositivos extra pequeños (telefonos,600px y
+abajo) */
+@media only screen and (max-width: 600px) {
+
+    
+}
+  /* Dispositivos pequeños (tabletas verticales y
+  telefonos grandes,600px y mas)*/
+  @media only screen and (min-width: 500px) {
+    
+
+    
+  }
+  
+  /*Dispositivos medianos (tabeltas horizontales,
+  768px y mas)*/
+  @media only screen and (min-width: 768px) {
+   
+  } 
+  
+  /* Disposotivos grandes (computadoras portatiles
+  y computadoras de escritorio,992px y mas) */
+  @media only screen and (min-width: 992px) {
+    
+    
+    
+  } 
+  
+  /* Dispositivos extra grandes (laptops y computadoras
+  de escritorio grandes, 1200px y superiores) */
+  @media only screen and (min-width: 1200px) {
+    
+    
+    
+  }

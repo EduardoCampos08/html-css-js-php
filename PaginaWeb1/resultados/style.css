@@ -1,5 +1,7 @@
 body{
     margin:0;
+    
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: auto;
@@ -9,20 +11,13 @@ html{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Krona+One&family=Poppins:wght@600&display=swap');
 
-
-
-:root{
-    --current-color: rgb(247, 186, 73);
-}
+/* menu */
 nav{
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 100;
+    z-index: 10;
 }
 .menu{
     display: flex;
@@ -32,13 +27,17 @@ nav{
 .menu li{
     padding: 1em 1.5em;
     margin-right: .5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    color: rgba(0,0,0, .5);
     
     box-shadow: 0 0 4px black;
     position: relative;
     cursor: pointer;
+}
+
+.menu li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0,0,0, .5);
+    text-decoration: none;
 }
 .menu li:before{
     content: "";
@@ -68,36 +67,413 @@ nav{
 
 
 
-
+/* contenedor principal */
 .container{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,auto);
 }
+
+/* titulo principal */
 .titleP{
     grid-column: 1/-1;
     grid-row: 1/1;
-    background-color: rgb(247, 186, 73);
-    height: 10vh;
+    background-color: white;
 }
+.titleP h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    padding-left: var(--separacionLeftTitle-padding-left);
+    margin-top: 0;
+}
+
+
+
+/* imagen principal */
 .imgMia{
     grid-column: 1/-1;
     grid-row: 2/3;
-    background-color: red;
-    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.imgMia img{
+    width: 50%;
+    box-shadow: 0 0 20px var(--second-color);
+}
+
+
+/* parrafo de discripcion */
 .parrafoDescription{
     grid-column: 1/-1;
     grid-row: 3/4;
-    background-color: blue;
-    height: 20vh;
 }
+.parrafoDescription p{
+    color: black;
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    padding-left: var(--separacionLeft-padding-left);
+}
+blockquote{
+    border-left: 5px solid var(--current-color);
+    padding-left: .2em;
+    color: var(--second-color);
+    font-family: italic smaller sans-serif;
+    font-size: 1.5em;
+
+    quotes: var(--cita-quotes);
+}
+
+ blockquote::before{
+    content: open-quote;
+}
+ blockquote::after{
+    content: close-quote;
+}
+
+
+/* contenedores de lenguajes Aprendidos */
 .lenguajesAprendidos{
     grid-column: 1/-1;
     grid-row: 4/5;
-    background-color: lime;
-    height: 60vh;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1em;
+}
+.lenguajesAprendidos h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    padding-left: var(--separacionLeftTitle-padding-left);
+    margin-bottom: 0;
+    grid-column: 1/-1;
+}
+.lenguajesAprendidos .html , .lenguajesAprendidos .css , .lenguajesAprendidos .js{
+    margin-top: 1em;
+}
+.lenguajesAprendidos .js , .lenguajesAprendidos .seo{
+    margin-right: 1em;
+}
+.lenguajesAprendidos .html , .lenguajesAprendidos .grid{
+    margin-left: 1em;
+}
+.lenguajesAprendidos .html{
+  grid-column: 1/2;
+  grid-template-rows: 1/2;
+}
+
+.lenguajesAprendidos .svg{
+    grid-column: 2/3;
+}
+
+
+/* estilos generales para las tarjetas */
+.lenguajesAprendidos .tarjetas{
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid var(--second-color);
+
+    transition: 1s ease-in-out;
+}
+.lenguajesAprendidos>.tarjetas:hover{
+    transform: scale(1.1);
+    
+    box-shadow: 0 0 10px 5px var(--second-color);
+}
+
+.lenguajesAprendidos .tarjetas img{
+    width: 15%;
+    border-radius: 50%;
+    margin-top: .5em;
+}
+.lenguajesAprendidos .tarjetas h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    /* padding-left: var(--separacionLeftTitle-padding-left); */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.lenguajesAprendidos .tarjetas h2{
+    font-size: var(--fontSubTitulos-font-size);
+    font-family: var(--tipografia-font-family);
+    color: var(--current-color);
+    /* padding-left: var(--separacionLeftSubTitle-padding-left); */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.lenguajesAprendidos .tarjetas p:nth-child(4){
+    color: var(--second-color);
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    margin-top: 0;
+}
+.lenguajesAprendidos .tarjetas h3{
+    color: var(--current-color);
+    font-family: var(--tipografia-font-family);
+    font-size: 1.5em;
+    padding-left: var(--separacionLeftSubTitle-padding-left);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.lenguajesAprendidos .tarjetas p:nth-child(6){
+    color: var(--second-color);
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    margin-top: 0;
+}
+.lenguajesAprendidos .tarjetas a{
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    padding: .5em 1em;
+    border-radius: 5px;
+    color: var(--current-color);
+    border: 2px solid var(--current-color);
+    text-decoration: none;
+    margin-bottom: .5em;
+}
+.lenguajesAprendidos .tarjetas a:hover{
+    background-color: var(--current-color);
+    color: white;
+}
+.lenguajesAprendidos .tarjetas a:focus{
+    background-color: var(--current-color);
+    color: white;
+}
+
+
+
+/* modal de las tarjetas */
+.lenguajesAprendidos .modal{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+
+    /* display: grid; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,auto);
+
+    position: absolute;
+    left: 0;
+    
+    display: none;
+}
+.lenguajesAprendidos .modal:target{
+    display: grid;
+}
+
+/* titulo principal del modal */
+.lenguajesAprendidos .modal .titlesP-modal{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    height: 16.66vh;
+    background-color: white;
+}
+.lenguajesAprendidos .modal .titlesP-modal h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    padding-left: var(--separacionLeftTitle-padding-left);
+}
+
+/* close modal */
+.lenguajesAprendidos .modal .close{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    height: 16.66vh;
+    background-color: white;
+} 
+.lenguajesAprendidos .modal .close a img{
+    width: 15%;
+    float: right;
+    margin: 2em;
+
+    transition: 1s ease-in-out all;
+}
+.lenguajesAprendidos .modal .close a img:hover{
+    transform: rotate(90deg);
+}
+
+/* imagen principal del modal */
+.lenguajesAprendidos .modal .imgs-modal{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: white;
+
+    
+}
+.container-imgP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lenguajesAprendidos .modal .imgs-modal img{
+    width: 80%;
+}
+
+
+/* parrafo principal del modal */
+.lenguajesAprendidos .modal .parrafosP-modal{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background-color: white;
+}
+.lenguajesAprendidos .modal .parrafosP-modal .container-parrafosP-modal{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.lenguajesAprendidos .modal .parrafosP-modal .container-parrafosP-modal p{
+    width: 80%;
+    color: var(--current-color);
+    font-size: 1.5em;
+    font-family: var(--tipografia-font-family);
+    padding-left: var(--separacionLeft-padding-left);
+    position: relative;
+}
+.lenguajesAprendidos .modal .parrafosP-modal .container-parrafosP-modal p::before{
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: var(--current-color);
+
+    transition: 1s ease-in-out all;
+}
+.lenguajesAprendidos .modal .parrafosP-modal .container-parrafosP-modal p:hover:before{
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* subtitulo del modal */
+.lenguajesAprendidos .modal .titlesS-modal{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    background-color: white;
+}
+.lenguajesAprendidos .modal .titlesS-modal h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    padding-left: var(--separacionLeftTitle-padding-left);
+}
+
+/* parrafo secundario del modal */
+.lenguajesAprendidos .modal .parrafosS-modal{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    background-color: white;
+}
+.lenguajesAprendidos .modal .parrafosS-modal p{
+    color: black;
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    padding-left: var(--separacionLeft-padding-left);
+}
+.lenguajesAprendidos .modal .parrafosS-modal .containerParrafosS-img{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lenguajesAprendidos .modal .parrafosS-modal .containerParrafosS-img img{
+    width: 60%;
+
+
+}
+
+/* tercer titulo del modal */
+.lenguajesAprendidos .modal .titleT-modal{
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    background-color: white;
+}
+.lenguajesAprendidos .modal .titleT-modal h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    padding-left: var(--separacionLeftTitle-padding-left);
+}
+
+/* video del modal */
+.lenguajesAprendidos .modal .videos-modal{
+    grid-column: 1/3;
+    grid-row: 6/7;
+    height: 16.66vh;
+    background-color: white;
+}
+.lenguajesAprendidos .modal .videos-modal .container-videomodal{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.lenguajesAprendidos .modal .videos-modal .container-videomodal iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* parrafo descriptivo del video */
+.lenguajesAprendidos .modal .parrafoV-modal{
+    grid-column: 3/5;
+    grid-row: 6/7;
+    background-color: white;
+   
+}
+.lenguajesAprendidos .modal .parrafoV-modal .container-parrafoV-modal{
+    margin-top: 12%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.lenguajesAprendidos .modal .parrafoV-modal .container-parrafoV-modal p{
+    color: black;
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    padding-left: var(--separacionLeft-padding-left);
+}
+.lenguajesAprendidos .modal .parrafoV-modal .container-parrafoV-modal a{
+    padding: .5em 1em;
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    border: 3px solid var(--current-color);
+    color: var(--second-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.lenguajesAprendidos .modal .parrafoV-modal .container-parrafoV-modal a:hover{
+    background: var(--current-color);
 }
 
 
@@ -105,6 +481,8 @@ nav{
 
 
 
+
+/* contenedor contacto */
 .seccion7{
     width: 100%,
 }
@@ -155,7 +533,7 @@ nav{
     font-size: 1.5em;
 }
 
-
+/* contenedor footer */
 .seccion8{
     width: 100%;
 }
@@ -191,3 +569,115 @@ nav{
 .seccion8 .svgs .box-svg a:first-child{
     margin-left: 5em;
 }
+
+
+
+/* Dispositivos extra pequeños (telefonos,600px y
+abajo) */
+@media only screen and (max-width: 600px) {
+    .titleP h1 , .lenguajesAprendidos h1{
+        font-size: var(--tamañoRWD1-font-size);
+        padding-left: var(--separacionLeftTitleRWD1-padding-left);
+        margin-bottom: 0;
+    }
+    .parrafoDescription p , .parrafoDescription blockquote{
+        font-size: var(--tamañotextRWD1-font-size);
+        padding-left: var(--separacionLeftRWD1-padding-left);
+        width: 80%;
+    }
+
+    .lenguajesAprendidos{
+        display: flex;
+        flex-direction: column;
+    }
+    .lenguajesAprendidos .html , .lenguajesAprendidos .css , .lenguajesAprendidos .js{
+        margin-top: 0;
+    }
+    .lenguajesAprendidos .js , .lenguajesAprendidos .seo{
+        margin-right: 0;
+    }
+    .lenguajesAprendidos .html , .lenguajesAprendidos .grid{
+        margin-left: 0;
+    }
+    }
+    
+     /* Dispositivos pequeños (tabletas verticales y
+      telefonos grandes,600px y mas)*/
+      @media only screen and (min-width: 500px) {
+        .lenguajesAprendidos{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto auto auto auto auto;
+
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .css , .lenguajesAprendidos .js{
+            margin-top: 0;
+        }
+        .lenguajesAprendidos .js , .lenguajesAprendidos .seo{
+            margin-right: 0;
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .grid{
+            margin-left: 0;
+        }
+      }
+      
+      /*Dispositivos medianos (tabeltas horizontales,
+      768px y mas)*/
+      @media only screen and (min-width: 768px) {
+        .lenguajesAprendidos{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto auto auto auto auto;
+
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .css , .lenguajesAprendidos .js{
+            margin-top: 0;
+        }
+        .lenguajesAprendidos .js , .lenguajesAprendidos .seo{
+            margin-right: 0;
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .grid{
+            margin-left: 0;
+        }
+      } 
+      /* Disposotivos grandes (computadoras portatiles
+      y computadoras de escritorio,992px y mas) */
+      @media only screen and (min-width: 992px) {
+        .lenguajesAprendidos{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto auto auto auto auto;
+
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .css , .lenguajesAprendidos .js{
+            margin-top: 0;
+        }
+        .lenguajesAprendidos .js , .lenguajesAprendidos .seo{
+            margin-right: 0;
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .grid{
+            margin-left: 0;
+        }
+    } 
+    
+    /* Dispositivos extra grandes (laptops y computadoras
+    de escritorio grandes, 1200px y superiores) */
+    @media only screen and (min-width: 1200px) {
+        .lenguajesAprendidos{
+            grid-column: 1/-1;
+            grid-row: 4/5;
+            background-color: white;
+        
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto auto auto auto;
+            grid-gap: 1em;
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .css , .lenguajesAprendidos .js{
+            margin-top: 1em;
+        }
+        .lenguajesAprendidos .js , .lenguajesAprendidos .seo{
+            margin-right: 1em;
+        }
+        .lenguajesAprendidos .html , .lenguajesAprendidos .grid{
+            margin-left: 1em;
+        }
+        
+    }

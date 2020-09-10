@@ -18,6 +18,10 @@ html{
 :root{
     --current-color: rgb(247, 186, 73);
     --second-color: rgb(165, 164, 164);
+
+    --tamaño-font-size: 3em;
+    --tipografia-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --shadow-text-shadow: 1px 1px 3px rgb(165, 164, 164);
 }
 nav{
     position: sticky;
@@ -40,7 +44,7 @@ nav{
     cursor: pointer;
 }
 .menu li a{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--textnav-font-family);
     text-transform: uppercase;
     color: rgba(0,0,0, .5);
     text-decoration: none;
@@ -90,8 +94,9 @@ nav{
 }
 .titleP h1{
     color: var(--current-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.5em; 
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
     padding-left: 1em;
 }
 .description{
@@ -123,6 +128,7 @@ nav{
     font-size: 1.5em;
     margin-top: 1em;
     margin-bottom: .2em;
+    font-family: var(--textnav-font-family);
 }
 .form .correo{
     margin-bottom: -1.5em;
@@ -131,7 +137,7 @@ nav{
     border: 1px solid var(--second-color);
 }
 .form form select,.form form textarea{
-    border-color: var(--second-color);
+    border-color: none;
 }
 .form form input , .form form select{
     height: 2em;
@@ -152,8 +158,8 @@ nav{
     border: none;
     color: white;
     font-size: 1.2em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+    font-family: var(--textnav-font-family);
 }
 .emailOK{
     color: white;
@@ -232,6 +238,7 @@ nav{
 }
 
 
+
 .seccion8{
     width: 100%;
 }
@@ -251,7 +258,7 @@ nav{
     margin: .7em;
 }
 .seccion8 .email a::before{
-    content: url(svg/correo.svg);
+    content: url(../svg/correo.svg);
     width: 10%;
     position: absolute;
     left: -10%;

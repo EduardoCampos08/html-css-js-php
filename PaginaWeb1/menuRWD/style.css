@@ -1,0 +1,149 @@
+body{
+    margin:0;
+}
+html{
+    scroll-behavior: auto;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Krona+One&family=Poppins:wght@600&display=swap');
+
+
+
+:root{
+    --current-color: rgb(247, 186, 73);
+}
+
+
+.container{
+    width: 200px;
+    margin: 100px auto;
+
+}
+
+.container .hamburguesa button{
+    background: var(--current-color);
+    border: 0;
+    outline: 0;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.container .hamburguesa button span{
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    height: 2px;
+
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.hamburguesa button.open .top{
+    animation-name: top-line-animation;
+}
+.hamburguesa button.open .center{
+    animation-name: center-line-animation;
+}
+.hamburguesa button.open .bottom{
+    animation-name: bottom-line-animation;
+}
+.hamburguesa button .top{
+    animation-name: top-line-animation-close;
+}
+.hamburguesa button .center{
+    animation-name: center-line-animation-close;
+}
+.hamburguesa button .bottom{
+    animation-name: bottom-line-animation-close;
+}
+
+@keyframes top-line-animation{
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+}
+@keyframes bottom-line-animation{
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+}
+@keyframes center-line-animation{
+    20%, 100%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+/* cerrar */
+@keyframes top-line-animation-close{
+    0%{
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+    50%,100%{
+        margin: 5px auto;
+        transform: translateY(0) rotate(0);
+    }
+}
+@keyframes center-line-animation-close{
+    0%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    20%,100%{
+        margin: 0 auto;
+        width: 60%;
+        opacity: 1;
+    }
+}
+@keyframes bottom-line-animation-close{
+   
+    0%{
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+    50%,100%{
+        margin: 5px auto;
+        transform: translateY(0) rotate(0);
+    }
+}
+
+
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background-color: var(--current-color);
+    z-index: 10000;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    color: white;
+
+    transform: scale(0);
+}
+
+.modal:target{
+    transform: scale(1);
+}

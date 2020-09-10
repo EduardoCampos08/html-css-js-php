@@ -9,15 +9,6 @@ html{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Krona+One&family=Poppins:wght@600&display=swap');
-
-
-
-:root{
-    --current-color: rgb(247, 186, 73);
-}
 nav{
     position: sticky;
     top: 0;
@@ -32,13 +23,17 @@ nav{
 .menu li{
     padding: 1em 1.5em;
     margin-right: .5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    color: rgba(0,0,0, .5);
     
     box-shadow: 0 0 4px black;
     position: relative;
     cursor: pointer;
+}
+
+.menu li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0,0,0, .5);
+    text-decoration: none;
 }
 .menu li:before{
     content: "";
@@ -80,23 +75,173 @@ nav{
 .container .titleP{
     grid-column: 1/-1;
     grid-row: 1/2;
-    background-color: rgb(247, 186, 73);
-    height: 10vh;
+}
+.container .titleP h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    padding-left: var(--separacionLeftTitle-padding-left);
+    margin-top: 0;
 }
 .container .description{
     grid-column: 1/-1;
     grid-row: 2/3;
-    background-color: red;
-    height: 15vh;
+}
+.container .description p{
+    color: black;
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    padding-left: var(--separacionLeft-padding-left);
 }
 .container .container-tarjetas{
     grid-column: 1/-1;
     grid-row: 3/4;
-    background-color: lime;
-    height: 80vh;
+    background-color: white;
+
+    display: flex;
+    
 }
 
+/* tarjetas  */
+.container .containerT{
+    width: 600px;
+    margin: 2em;
+}
+.container .tarjetas .img-delantera{
+     width: 80%;  /*con esta linea se puede cambiar para RWD */
+     border-radius: 8px;
+    } 
+.containerT figure{
+    width: 100%;
+    position: relative;
+    
+    transform: perspective(600px) rotateY(0);
+    backface-visibility: visible;
+    transform-style: preserve-3d;
+    transition: all ease .5s;
+    border-radius: 8px;
+}
+.containerT figure img,.containerT figure figcaption{
+    width: 100%;
+    transition:  all ease .5s;
+    height: 100%;
+}
 
+.containerT figure .img-delantera{
+    display: block;
+    backface-visibility: hidden;
+}
+.containerT:hover figure{
+    transform: perspective(600px) rotateY(180deg);
+    
+}
+.container .tarjetas .title-advertencia{
+    color: red;
+    font-family: var(--tipografia-font-family);
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+}
+.container .tarjetas .text-afuera{
+    color: black;
+    font-size: .9em;
+    font-family: var(--tipografia-font-family);
+    margin: 0;
+}
+
+/* .containerT figure{
+    transform: perspective(600px) rotateY(180deg);
+} */
+
+/* estilos parte trasera  */
+.containerT figure .trasera{
+    position: absolute;
+    top: 0;
+    transform: perspective(600px) rotateY(180deg); 
+    backface-visibility: hidden;
+    overflow: auto;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0,0, 0, .8)inset;
+    background-color: white;
+    z-index: 100;
+    border-radius: 8px;
+}
+.container figure .trasera h1{
+    color: var(--current-color);
+    font-size: var(--tamaño-font-size);
+    font-family: var(--tipografia-font-family);
+    text-shadow: var(--shadow-text-shadow);
+    /* padding-left: var(--separacionLeftTitle-padding-left); */
+    text-align:center;
+    margin: 0;
+}
+.container figure .trasera p{
+    color: black;
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    padding-left: var(--separacionLeft-padding-left);
+}
+.container figure .trasera h2{
+    font-size: var(--fontSubTitulos-font-size);
+    font-family: var(--tipografia-font-family);
+    color: var(--current-color);
+    padding-left: var(--separacionLeftSubTitle-padding-left);
+}
+.container figure .trasera .lugar{
+ transform: perspective(600px) rotateY(180deg);
+ background-color: white;
+}
+.container .tarjetas .trasera .lugar {
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.container .tarjetas .trasera .lugar .sub-trasera{
+    margin-left: 0;
+    
+}
+.container .tarjetas .trasera .lugar .sub-trasera img{
+    width: 100%;
+    height: 60%;
+}
+blockquote{
+    border-left: 5px solid var(--current-color);
+    margin-top: .2em;
+    margin-left: 0;
+    color: var(--second-color);
+    font-family: italic smaller sans-serif;
+    font-size: 1.5em;
+    quotes: var(--cita-quotes);
+}
+
+ blockquote::before{
+    content: open-quote;
+}
+ blockquote::after{
+    content: close-quote;
+}
+.container .tarjetas .trasera .lugar .sub-trasera figcaption{
+    color: black;
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    width: 90%;
+    margin: 0 5%;
+}
+.container .tarjetas .trasera .lugar .sub-trasera a{
+    font-size: var(--tamañotext-font-size);
+    font-family: var(--tipografia-font-family);
+    padding: .5em 1em;
+    color: var(--current-color);
+    text-decoration: none;
+    border: 2px solid var(--current-color);
+    display: block;
+    text-align: center;
+}
+.container .tarjetas .trasera .lugar .sub-trasera a:hover{
+    background-color: var(--current-color);
+    color: white;
+}
 
 
 

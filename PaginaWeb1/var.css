@@ -1,0 +1,69 @@
+:root{
+    --current-color: rgb(247, 186, 73);
+    --second-color: rgb(165, 164, 164);
+
+    /* titulos */
+    --tamaño-font-size: 3.4em;
+    --fontSubTitulos-font-size: 2.4em;
+    --separacionLeftTitle-padding-left: .3em;
+    --separacionLeftSubTitle-padding-left: .6em;
+    --tipografia-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --shadow-text-shadow: 1px 1px 3px rgb(165, 164, 164);
+
+    /* parrafos, textos y navs*/
+    --textnav-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --tamañotext-font-size: 1.2em;
+    --separacionLeft-padding-left: 1em;
+
+    /* citas bibliograficas */
+    --cita-quotes: ('\201c''\201c');
+
+
+    /* variables para medias queries para Responsive Web Disegn */
+
+
+    /* Dispositivos extra pequeños (telefonos,600px y
+    abajo) */
+
+    /* titulos */
+   
+    --tamañoRWD1-font-size: 2.3em;
+    --fontSubTitulosRWD1-font-size: 1.9em;
+    --separacionLeftTitleRWD1-padding-left: .1em;
+    --separacionLeftSubTitleRWD1-padding-left: .1em;
+
+    /* parrafos, textos y navs*/
+     --tamañotextRWD1-font-size: .7em;
+    --separacionLeftRWD1-padding-left: .5em;
+
+
+
+
+    /* Dispositivos pequeños (tabletas verticales y
+  telefonos grandes,600px y mas)*/
+
+
+
+  
+  /*Dispositivos medianos (tabeltas horizontales,
+  768px y mas)*/
+
+
+
+
+  /* Disposotivos grandes (computadoras portatiles
+  y computadoras de escritorio,992px y mas) */
+
+
+
+
+
+  /* Dispositivos extra grandes (laptops y computadoras
+  de escritorio grandes, 1200px y superiores) */
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Krona+One&family=Poppins:wght@600&display=swap');
+
+

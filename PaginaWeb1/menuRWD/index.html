@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu RWD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../normalize.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="hamburguesa" id="hamburguesa">
+            <button>
+                <a href="#modal">
+                <span class="top"></span>
+                <span class="center"></span>
+                <span class="bottom"></span>
+                </a>
+            </button>
+        </div>
+    </div>
+    
+
+
+    <div class="modal" id="modal">
+        <article class="img-311">
+            <img src="https://images.pexels.com/photos/3363331/pexels-photo-3363331.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Playa" title="Playa" >
+        </article>   
+        <article class="title-parrafo-311" id="title-parrafo-311">
+            <h2>Melaque,Jalisco</h2>
+            <p>Melaque por sus bellas playas Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, atque natus repellendus ea at perferendis, nulla tempora obcaecati neque sit tempore facilis voluptatem ipsa ex aperiam facere, doloribus sint voluptatum!</p>
+        </article>
+    </div>
+
+
+    <script>
+        const nav=document.querySelector('#hamburguesa button');
+        const modal=document.getElementById('modal');
+        nav.addEventListener('click',e=>{
+            nav.classList.toggle('open');
+        })
+
+    </script>
+</body>
+</html>

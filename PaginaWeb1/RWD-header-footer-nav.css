@@ -1,0 +1,270 @@
+/* Web Responsive Disegn del header,footer y el menu */
+
+/* Dispositivos extra pequeños (telefonos,600px y
+abajo) */
+@media only screen and (max-width: 600px) {
+/* footer */
+.seccion7 .contacto{
+    height: 20vh;
+    background-position-y: -2vh;
+ }
+ .seccion7 .contacto h1{
+     top: 0;
+     font-family: 'Krona One', sans-serif;
+     font-size: 2em;
+     color: white;
+     letter-spacing: .2em;
+ }
+ .seccion7 .contacto h1::before{
+     content: "";
+     position: absolute;
+     width: 70%;
+     height: 2%;
+     top: 50%;
+     left: 15%;
+     background-color: white;
+ }
+ .seccion7 .contacto p{
+     bottom: .2em;
+     width: 80%;
+     color: white;
+     font-size: 1em;
+     margin-top: .3em;
+ }
+ .svgs .box-svg a img{
+     width: 10%;
+     margin-right: .5em;
+ }
+  .svgs .box-svg a:first-child{
+     margin-left: 1.5em;
+ }
+ 
+  /* nav */
+  .menu{
+     display: none;
+     margin-top: 0;
+     padding-left: .5em;
+     padding-right: .5em;
+ }
+  .menu:target{
+      display: block;
+  }
+  nav img{
+     display: block;
+ }
+ nav img , .menu a img{
+     width: 10%;
+     margin-left: 1em;
+     margin-bottom: 0;
+     margin-top: .5em;
+ }
+ .menu a img{
+     float: right;
+ }
+
+  
+
+}
+
+ /* Dispositivos pequeños (tabletas verticales y
+  telefonos grandes,600px y mas)*/
+  @media only screen and (min-width: 500px) {
+    /* nav */
+    .menu{
+        display: none;
+        
+    margin-top: 0;
+    padding-left: .5em;
+    padding-right: .5em;
+    }
+ .menu:target{
+    display: block;
+}
+nav img{
+    display: block;
+}
+nav img , .menu a img{
+    width: 7%;
+    margin-left: 1em;
+    margin-bottom: 0;
+    margin-top: .5em;
+}
+
+.menu a img{
+    float: right;
+}
+/* footer */
+.seccion7 .contacto{
+    height: 20vh;
+    background-position-y: -2vh;
+ }
+ .seccion7 .contacto h1{
+    top: 0;
+    font-family: 'Krona One', sans-serif;
+    font-size: 2em;
+    color: white;
+    letter-spacing: .2em;
+    margin-top: .5em;
+}
+.seccion7 .contacto h1::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    top: 50%;
+    left: 15%;
+    background-color: white;
+}
+.seccion7 .contacto p{
+    bottom: .2em;
+    width: 80%;
+    color: white;
+    font-size: 1em;
+}
+ .svgs .box-svg a img{
+     width: 10%;
+     margin-right: .5em;
+ }
+  .svgs .box-svg a:first-child{
+     margin-left: 1.5em;
+ }
+ .seccion8 .email a{
+     margin-left: 2.35em;
+     font-size: 1em;
+ }
+    
+  }
+  
+  /*Dispositivos medianos (tabeltas horizontales,
+  768px y mas)*/
+  @media only screen and (min-width: 768px) {
+    .menu{
+        display: flex;
+    }
+    nav img{
+        display: none;
+    }
+    
+    /* footer */
+.seccion7 .contacto{
+    height: 20vh;
+    background-position-y: -2vh;
+ }
+ .seccion7 .contacto h1{
+     top: 0;
+     font-family: 'Krona One', sans-serif;
+     font-size: 4em;
+     color: white;
+     letter-spacing: .2em;
+     margin-top: .5em;
+ }
+ .seccion7 .contacto h1::before{
+     content: "";
+     position: absolute;
+     width: 70%;
+     height: 5%;
+     top: 120%;
+     left: 15%;
+     background-color: white;
+ }
+ .seccion7 .contacto p{
+     bottom: .2em;
+     width: 80%;
+     color: white;
+     font-size: 1.3em;
+ }
+ .svgs .box-svg a img{
+     width: 10%;
+     margin-right: .5em;
+ }
+  .svgs .box-svg a:first-child{
+     margin-left: 1.5em;
+ }
+ .seccion8 .email a{
+     margin-left: 2.35em;
+     font-size: 1em;
+ }
+  } 
+  /* Disposotivos grandes (computadoras portatiles
+  y computadoras de escritorio,992px y mas) */
+  @media only screen and (min-width: 992px) {
+    .seccion7 .contacto{
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        background-image: url(https://images.pexels.com/photos/34753/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-size: cover;
+        background-position-Y: -44vh;
+        background-repeat: no-repeat;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion7 .contacto h1{
+        bottom: 1.2em;
+        font-family: 'Krona One', sans-serif;
+        font-size: 5em;
+        color: white;
+        letter-spacing: .3em;
+    }
+    .seccion7 .contacto h1::before{
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 5%;
+        bottom: -20%;
+        left: 15%;
+        background-color: white;
+    }
+    .seccion7 .contacto p{
+        bottom: .5em;
+        width: 40%;
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    
+} 
+
+/* Dispositivos extra grandes (laptops y computadoras
+de escritorio grandes, 1200px y superiores) */
+@media only screen and (min-width: 1200px) {
+  
+    .seccion7 .contacto{
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        background-image: url(https://images.pexels.com/photos/34753/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-size: cover;
+        background-position-Y: -44vh;
+        background-repeat: no-repeat;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion7 .contacto h1{
+        bottom: 1.2em;
+        font-family: 'Krona One', sans-serif;
+        font-size: 5em;
+        color: white;
+        letter-spacing: .3em;
+    }
+    .seccion7 .contacto h1::before{
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 5%;
+        bottom: -20%;
+        left: 15%;
+        background-color: white;
+    }
+    .seccion7 .contacto p{
+        bottom: .5em;
+        width: 40%;
+        color: white;
+        font-size: 1.5em;
+    }
+    
+}
